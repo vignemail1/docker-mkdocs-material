@@ -1,0 +1,67 @@
+site_name: 'Demo docs'
+site_description: 'Demo docs'
+site_author: ''
+copyright: "@ company 2020"
+theme:
+  name: 'material'
+  language: 'fr'
+  palette:
+    primary: 'indigo'
+    accent: 'red'
+  #favicon: ''
+  #logo: ''
+  features:
+    - tabs
+    #- instant
+  font:
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
+
+extra_css:
+  - 'assets/styles/extra.css'
+extra_javascript:
+  - 'assets/js/mermaid.min.js'
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - meta
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.progressbar
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+plugins:
+  - search
+  # - add-number
+  - awesome-pages:
+      # collapse_single_pages: true
+  - minify:
+      minify_html: true
+  - git-revision-date-localized:
+      type: datetime
+      fallback_to_build_date: true
