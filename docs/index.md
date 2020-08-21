@@ -6,15 +6,11 @@ L'ensemble de la documentation publiée se trouve sous le dossier `docs` à la b
 
 Le premier niveau de dossier donnera le premier niveau de navigation et si la feature `tabs` est activée dans le fichier `mkdocs.yml`, ce premier niveau est extrait pour afficher la navigation comme liens dans l'entête du site.
 
-![navigation](./assets/images/redaction/capture_site.png)
-
 Le nom du dossier est utilisé pour la navigation sauf si un fichier `.pages` (fichier yaml) dans ce dossier, apporte un changement du titre.
 
 Le fichier `.pages` peut également définir l'ordre d'affichage des pages et dossiers dans la navigation (attribut `arrange` dans ce fichier).
 
 Chaque dossier qui publiera de la documentation, devra avoir un fichier `index.md`. Cela produira le fichier `index.html` du dossier.
-
-![structure fichiers](./assets/images/redaction/structure_fichiers.png)
 
 ## La syntaxe Markdown utilisable avec l'image mkdocs utilisée
 
@@ -213,14 +209,14 @@ Afin de mettre en avant les chemins/noms de fichiers, ..., utilisez la syntaxe s
 On peut aussi utiliser les inline code pour mettre en avant l'intitulé d'un champ, une valeur ou une commande (une ligne)
 
 ```
-- `Start Jabber Video when I log on to my computer` : doit être décoché
-- IPv4 : `195.221.21.72`
-- **Syntaxe en ligne de commande** : `ssh login@myria.criann.fr`
+- `Start APP when I log on to my computer` : doit être décoché
+- IPv4 : `8.8.8.8`
+- **Syntaxe en ligne de commande** : `ssh login@host`
 ```
 
-- `Start Jabber Video when I log on to my computer` : doit être décoché
-- IPv4 : `195.221.21.72`
-- **Syntaxe en ligne de commande** : `ssh login@myria.criann.fr`
+- `Start APP when I log on to my computer` : doit être décoché
+- IPv4 : `8.8.8.8`
+- **Syntaxe en ligne de commande** : `ssh login@host`
 
 ### Les liens hypertexte et images
 
