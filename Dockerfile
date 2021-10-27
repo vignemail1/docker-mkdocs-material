@@ -1,5 +1,5 @@
 
-FROM python:3.8-slim-buster
+FROM python:3.9-slim-buster
 
 # ensure local python is preferred over distribution python
 ENV PATH /usr/local/bin:$PATH
